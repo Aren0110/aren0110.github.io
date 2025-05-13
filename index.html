@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luckyway Tour</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #fdfdfd;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0077cc, #00b4d8);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3em;
+    }
+
+    nav {
+      background-color: #f2f2f2;
+      text-align: center;
+      padding: 10px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #0077cc;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #0077cc;
+      border-bottom: 2px solid #0077cc;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    .packages, .promotions, .partners {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      width: 100%;
+      max-width: 300px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 6px;
+    }
+
+    .booking-form {
+      background-color: #e9f6ff;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .booking-form input, .booking-form select, .booking-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-family: inherit;
+    }
+
+    .booking-form button {
+      background-color: #0077cc;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #0077cc;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    @media (max-width: 700px) {
+      .packages, .promotions, .partners {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Luckyway Tour</h1>
+    <p>Ճամփորդություն դեպի երջանկություն 🌍✈️</p>
+  </header>
+
+  <nav>
+    <a href="#about">Մեր մասին</a>
+    <a href="#packages">Փաթեթներ</a>
+    <a href="#promos">Պրոմո</a>
+    <a href="#partners">Գործընկերներ</a>
+    <a href="#booking">Ամրագրում</a>
+    <a href="#contact">Կապ</a>
+  </nav>
+
+  <section id="about">
+    <h2>Մեր մասին</h2>
+    <p>Luckyway Tour-ը նպատակ ունի առաջարկել լավագույն տուրիստական փորձառությունները՝ Հայաստանում և արտերկրում։ Մենք հոգ ենք տանում ձեր հանգստի մասին՝ առաջարկելով հարմար փաթեթներ, պրոֆեսիոնալ ուղեկցում և վստահելի գործընկերներ։</p>
+  </section>
+
+  <section id="packages">
+    <h2>Առաջարկվող փաթեթներ</h2>
+    <div class="packages">
+      <div class="card">
+        <img src="https://source.unsplash.com/300x200/?yerevan" alt="Երևան Տուր">
+        <h3>Երևան Տուր</h3>
+        <p>Բացահայտիր Հայաստանի մայրաքաղաքը 3 օրվա ընթացքում: Հյուրանոց, էքսկուրսիա, ուղեկցող՝ ներառված։</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/300x200/?sevan,lake" alt="Սևան">
+        <h3>Սևանյան հանգիստ</h3>
+        <p>2 օրյա հանգիստ Սևանի ափին՝ լի արևով, ջրով և համեղ ուտելիքով։</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/300x200/?europe,travel" alt="Եվրոպա">
+        <h3>Եվրոպա Տուր</h3>
+        <p>Պատրաստ ենք հարմարեցնել ցանկացած եվրոպական ուղղություն ձեր նախընտրությամբ։</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="promos">
+    <h2>Պրոմո ակցիաներ</h2>
+    <div class="promotions">
+      <div class="card">
+        <h3>10% զեղչ ամառային փաթեթների համար</h3>
+        <p>Բաց մի թող հնարավորությունը՝ ամրագրիր մինչև հունիսի 1-ը և ստացիր զեղչ:</p>
+      </div>
+      <div class="card">
+        <h3>Անվճար տրանսֆեր Երևանից</h3>
+        <p>Ընտրիր փաթեթ՝ և ստացիր անվճար տրանսֆեր Երևանից մինչև տեղում։</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="partners">
+    <h2>Մեր գործընկերները</h2>
+    <div class="partners">
+      <div class="card">
+        <h3>Armenia Hotel Group</h3>
+        <p>Հյուրանոցային համալիրներ ամբողջ Հայաստանում։</p>
+      </div>
+      <div class="card">
+        <h3>FlyAir</h3>
+        <p>Ավիատոմսեր՝ հատուկ պայմաններով մեր հաճախորդների համար։</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="booking">
+    <h2>Ամրագրում</h2>
+    <div class="booking-form">
+      <form>
+        <label>Ձեր անունը</label>
+        <input type="text" required>
+
+        <label>Էլ․ հասցե</label>
+        <input type="email" required>
+
+        <label>Տուր փաթեթի ընտրություն</label>
+        <select>
+          <option>Երևան Տուր</option>
+          <option>Սևանյան հանգիստ</option>
+          <option>Եվրոպա Տուր</option>
+        </select>
+
+        <label>Հայտի մանրամասներ</label>
+        <textarea rows="4"></textarea>
+
+        <button type="submit">Ուղարկել հայտը</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Կապ մեզ հետ</h2>
+    <p>📧 info@luckywaytour.am</p>
+    <p>📞 +374 99 123456</p>
+    <p>📍 Երևան, Հայաստան</p>
+    <p>💬 Facebook | Instagram | WhatsApp</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Luckyway Tour — Բոլոր իրավունքները պաշտպանված են</p>
+  </footer>
+
+</body>
+</html>
